@@ -1,0 +1,42 @@
+### get connected
+GET http://localhost:8000/
+
+### get all pets
+GET http://localhost:8000/pets
+
+### pets by ID
+GET http://localhost:8000/pets/2
+
+### crete a new pet
+POST http://localhost:8000/pets
+Content-Type: application/json
+
+{
+    "age":3,
+    "kind": "dog",
+    "name": "Scrappy"
+}
+
+### patch pet
+PATCH http://localhost:8000/pets/1
+Content-Type: application/json
+
+{
+    "age": 3,
+    "kind": "unicorn",
+    "name": "Scrappy"
+}
+
+### put a pet
+PUT http://localhost:8000/pets/1
+Content-Type: application/json
+
+{
+    "age": 2, 
+    "kind":"cat",
+    "name": "fred"
+}
+
+### delete[pet]
+DELETE http://localhost:8000/pets/7
+
