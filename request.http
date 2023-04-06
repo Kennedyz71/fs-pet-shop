@@ -7,7 +7,7 @@ GET http://localhost:8000/pets
 ### pets by ID
 GET http://localhost:8000/pets/2
 
-### crete a new pet
+### create a new pet
 POST http://localhost:8000/pets
 Content-Type: application/json
 
@@ -18,24 +18,24 @@ Content-Type: application/json
 }
 
 ### patch pet
-PATCH http://localhost:8000/pets/1
+PATCH http://localhost:8000/pets/7
 Content-Type: application/json
 
 {
-    "age": 3,
-    "kind": "unicorn",
-    "name": "Scrappy"
+    "age": 3
 }
+
 
 ### put a pet
-PUT http://localhost:8000/pets/1
+PUT http://localhost:8000/pets/7
 Content-Type: application/json
 
 {
-    "age": 2, 
-    "kind":"cat",
-    "name": "fred"
+    "age": 4,
+    "kind": "unicorn",
+    "name": "Elenor"
 }
+
 
 ### delete[pet]
 DELETE http://localhost:8000/pets/7
